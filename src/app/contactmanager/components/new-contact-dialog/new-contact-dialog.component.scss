@@ -1,0 +1,10 @@
+.exemple-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.exemple-container > * {
+  width: 100%;
+}
+
+

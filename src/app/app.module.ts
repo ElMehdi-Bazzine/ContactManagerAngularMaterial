@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -7,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { DemoModule } from './demo/demo.module';
 import { ContactmanagerModule } from './contactmanager/contactmanager.module';
+
 
 const routes : Routes =[
   {
@@ -26,6 +28,7 @@ const routes : Routes =[
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes)
   ],
